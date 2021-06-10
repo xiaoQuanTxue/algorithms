@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SparseArray/SparseArray.iml" filepath="$PROJECT_DIR$/SparseArray/SparseArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithms.iml" filepath="$PROJECT_DIR$/algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/graph/graph.iml" filepath="$PROJECT_DIR$/graph/graph.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hashmap/hashmap.iml" filepath="$PROJECT_DIR$/hashmap/hashmap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linkedlist/linkedlist.iml" filepath="$PROJECT_DIR$/linkedlist/linkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sorts/sorts.iml" filepath="$PROJECT_DIR$/sorts/sorts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/stack_queue/stack_queue.iml" filepath="$PROJECT_DIR$/stack_queue/stack_queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tree/tree.iml" filepath="$PROJECT_DIR$/tree/tree.iml" />
+    </modules>
+  </component>
+</project>
