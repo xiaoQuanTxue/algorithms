@@ -2,7 +2,7 @@ package com.zhl.graph;
 
 import com.zhl.queue.LinkedQueue;
 
-import java.util.LinkedList;
+import java.util.Stack;
 
 public class BreadthFirstPaths {
     private boolean[] marked;
@@ -31,4 +31,19 @@ public class BreadthFirstPaths {
             }
         }
     }
+
+    public boolean hasPathTo(int v) {
+        return marked[v];
+    }
+
+    public Iterable<Integer> pathTo(int v) {
+        Stack<Integer> stack = new Stack<>();
+        for (int x = v; x != s; x = edgeTo[x]) {
+            stack.push(edgeTo[x]);
+        }
+        stack.push(s);
+        return stack;
+    }
+
 }
+
