@@ -2,9 +2,18 @@ package com.zhl.digraph;
 
 import java.util.Iterator;
 
+/**
+ * 拓扑排序
+ * 有向的检测是拓扑排序的前提
+ */
 public class Topological {
+    private Iterable<Integer> order;
     public Topological(Digraph G){
-
+        DirectedCycle cycleFinder = new DirectedCycle(G);
+        if(!cycleFinder.hasCycle()){
+            DepthFirstOrder dfs = new DepthFirstOrder(G);
+            order = dfs.reversePost();
+        }
     }
 
     /**
@@ -12,7 +21,7 @@ public class Topological {
      * @return
      */
     public boolean isDAG(){
-        return false;
+        return order!=null;
     }
 
     /**
@@ -20,6 +29,6 @@ public class Topological {
      * @return
      */
     Iterable<Integer> order(){
-        return null;
+        return order;
     }
 }
