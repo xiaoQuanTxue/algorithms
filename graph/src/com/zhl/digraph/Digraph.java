@@ -16,19 +16,23 @@ public class Digraph implements G {
         }
     }
 
+    @Override
     public int V(){
         return V;
     }
 
+    @Override
     public int E(){
         return E;
     }
 
-    public void addEdge(int v,int w){
+    @Override
+    public void addEdge(int v, int w){
         adj[v].add(w);
         E++;
     }
 
+    @Override
     public Iterable<Integer> adj(int v){
         return this.adj[v];
     }
@@ -36,8 +40,9 @@ public class Digraph implements G {
     public Digraph reverse(){
         Digraph g=new Digraph(this.V);
         for(int v=0;v<this.V;v++){
-            for(Integer w:adj(v))
+            for(Integer w:adj(v)) {
                 g.addEdge(w,v);
+            }
         }
         return g;
     }

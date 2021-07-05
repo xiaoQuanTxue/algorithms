@@ -1,10 +1,10 @@
 package com.zhl.digraph;
 
-import java.util.Iterator;
-
 /**
  * 拓扑排序
  * 有向的检测是拓扑排序的前提
+ *
+ * 有向图的拓扑顺序即为所有顶点的逆后续排序
  */
 public class Topological {
     private Iterable<Integer> order;
